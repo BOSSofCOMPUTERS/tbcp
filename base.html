@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}CodeEducate{% endblock %}</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <img src="https://scontent.ftbs4-2.fna.fbcdn.net/v/t1.15752-9/467796865_1159858485770179_4503126234617806506_n.png?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_ohc=WkpOOuo73RIQ7kNvgEtpn_3&_nc_oc=Adj025A9CCKF0SLTiwxkiDADrLsMdoFxMsqMNeWmD2E7kwa9wQacS96ItV7812Bq-KA&_nc_zt=23&_nc_ht=scontent.ftbs4-2.fna&oh=03_Q7cD1gF3Dsf9mXYYiPFvE-87TpUJZyHqUIYrWXKlt0y1UwjbtQ&oe=67A0782E" alt="CodeEducate Logo">
+        <div class="navigation">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About</a></li>
+                <li><a href="courses.html">Courses</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Main Content -->
+    <main>
+        {% block content %}
+        {% endblock %}
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-logo">
+                <img src="https://scontent.ftbs4-2.fna.fbcdn.net/v/t1.15752-9/467796865_1159858485770179_4503126234617806506_n.png?_nc_cat=110&ccb=1-7&_nc_sid=9f807c&_nc_ohc=WkpOOuo73RIQ7kNvgEtpn_3&_nc_oc=Adj025A9CCKF0SLTiwxkiDADrLsMdoFxMsqMNeWmD2E7kwa9wQacS96ItV7812Bq-KA&_nc_zt=23&_nc_ht=scontent.ftbs4-2.fna&oh=03_Q7cD1gF3Dsf9mXYYiPFvE-87TpUJZyHqUIYrWXKlt0y1UwjbtQ&oe=67A0782E" alt="Company Logo">
+            </div>
+            <div class="footer-image">
+                <a href="https://www.tbceducation.ge/" target="_blank">
+                    <img src="https://upload.wikimedia.org/wikipedia/en/thumb/e/e2/TBC_Bank_logo.svg/833px-TBC_Bank_logo.svg.png?20191209200336" alt="TBC Education">
+                </a>
+            </div>
+            <div class="footer-menu">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
